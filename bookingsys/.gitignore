@@ -1,0 +1,92 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node modules and package files
+node_modules/
+# package.json
+package-lock.json
+yarn.lock
+
+# Build and distribution directories
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# Backend-specific ignores
+/backend/node_modules/
+backend/dist/
+backend/out/
+backend/build/
+/backend/latestenv
+/backend/newenv
+/backend/venv
+/backend/__pycache__
+
+# Backend-specific ignores (Python)
+# Byte-compiled files
+/backend/app/__pycache__/
+/backend/app/*.py[cod]
+/backend/app/*$py.class
+
+
+
+
+
+/new_backend/node_modules/
+new_backend/dist/
+new_backend/out/
+new_backend/build/
+/new_backend/latestenv
+/new_backend/newenv
+/new_backend/venv
+/new_backend/__pycache__
+
+# Backend-specific ignores (Python)
+# Byte-compiled files
+/new_backend/app/__pycache__/
+/new_backend/app/*.py[cod]
+/new_backend/app/*$py.class
+
+# Frontend-specific ignores
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.*.local
+/frontend/node_modules/
+frontend/dist/
+frontend/out/
+frontend/build/
+
+*__init__.py
+backend/app/config/__pycache__/__init__.cpython-312.pyc
+backend/app/config/__pycache__/db.cpython-312.pyc
+backend/app/models/__pycache__/__init__.cpython-312.pyc
+backend/app/models/__pycache__/booking.cpython-312.pyc
+backend/app/models/__pycache__/tour.cpython-312.pyc
+backend/app/routes/__pycache__/__init__.cpython-312.pyc
+backend/app/routes/__pycache__/booking.cpython-312.pyc
+new_backend/app/config/__pycache__/__init__.cpython-312.pyc
+new_backend/app/models/__pycache__/__init__.cpython-312.pyc
+new_backend/app/models/__pycache__/booking.cpython-312.pyc
+new_backend/app/models/__pycache__/tour.cpython-312.pyc
+new_backend/app/routes/__pycache__/__init__.cpython-312.pyc
+new_backend/app/routes/__pycache__/booking.cpython-312.pyc
+new_backend/app/routes/__pycache__/tour.cpython-312.pyc
+new_backend/app/config/__pycache__/db.cpython-312.pyc

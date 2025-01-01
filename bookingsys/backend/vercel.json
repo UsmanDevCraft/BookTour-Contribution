@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "main.py"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/bookings",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://bookingsys-front.vercel.app"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET,DELETE,PATCH,POST,PUT,OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        },
+        {
+          "key": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://bookingsys-front.vercel.app"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET,DELETE,PATCH,POST,PUT,OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        },
+        {
+          "key": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ]
+    }
+  ]
+}
